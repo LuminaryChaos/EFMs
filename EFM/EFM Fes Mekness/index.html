@@ -1,0 +1,126 @@
+
+        <!-- EX1
+
+            C. <h1>
+
+            C. ul { display: flex; }
+
+            A. :first-child
+
+            D. (espace)
+
+            les sélecteurs d'ID sont destinés à identifier de manière unique un seul élément,
+            et que les sélecteurs de classe peuvent être utilisés pour cibler plusieurs éléments.
+        
+            Intégrer Bootstrap via un gestionnaire de dépendances comme React
+        
+        -->
+
+    <!DOCTYPE html>
+
+    <html>
+
+        <head>
+            <title>Chein.com</title>
+            <style>
+
+                body {
+                    font-family: Arial, Roboto, sans-serif;
+                }
+
+                header {
+                    background-color: #f2f2f2;
+                    height: 80px;
+                    padding: 20px;
+                    border: 2px solid rgb(6, 157, 191);
+                    border-radius: 25px;
+                }
+
+                header h1 {
+                    font-size: 40px;
+                    line-height: 65px;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+header h1::first-letter {
+ font-size: 100px;
+}
+
+nav {
+ background-color: #f2f2f2;
+ padding: 10px;
+ border: 2px solid rgb(6, 157, 191);
+ border-radius: 25px;
+}
+
+nav ul {
+ margin: 0;
+ padding: 0;
+ display: flex;
+ justify-content: space-around;
+}
+
+    nav ul li {
+        list-style-type: none;
+    }
+
+nav ul li a {
+
+ border-radius: 10px;
+ transition: all 0.5s ease;
+ text-decoration: none;
+}
+
+nav ul li a:hover {
+ text-transform: lowercase;
+ background-color: #ddd;
+ transform: translateX(20px);
+}
+
+.titre{
+    display: flex;
+    justify-content: center;
+}
+.titre p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.pg1{
+    text-align: center;
+}
+
+
+            </style>
+        </head>
+
+    <body>
+
+    <header>
+        <h1>Chein.com</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Femme</a></li>
+            <li><a href="#">HOT</a></li>
+            <li><a href="#">Homme</a></li>
+            <li><a href="#">PROMOS</a></li>
+        </ul>
+    </nav>
+    
+    <div class="titre" >
+        <p>Acheter par Catégorie</p>
+    </div>
+    <div class="pg1" >
+        <p class="pg2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero iure quis provident aspernatur, sit minima voluptates perferendis saepe odit numquam soluta ad, corporis molestias quo ex repudiandae tempore suscipit porro!</p>
+    </div>
+
+
+    <div></div>
+    <div></div>
+    <div></div>
+
+
+    </body>
+</html>
