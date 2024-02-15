@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>EFM</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin: 0 1em;
+        }
+
+        nav a:hover {
+            color: green;
+            text-decoration: underline;
+        }
+
+        .software {
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border: 2px solid #ccc;
+            padding: 4em;
+            margin: 4em;
+        }
+
+        .software div {
+            text-align: center;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 2em;
+        }
+
+        .buttons button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 1em 2em;
+            margin: 0.5em;
+        }
+
+        @media (max-width: 600px) {
+            .software {
+                flex-direction: column;
+            }
+
+            .buttons button {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Best Tools 1 Utilities Software</h1>
+        <nav>
+            <ul>
+                <li><a href="win.html">WINDOWS</a></li>
+                <li><a href="mac.html">MAC</a></li>
+                <li><a href="android.html">ANDROID</a></li>
+                <li><a href="ios.html">IOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="software">
+        <div>
+            <img src="log1.png" alt="Software 1">
+            <h2>Title 1</h2>
+            <p>Type: Type of Software 1</p>
+            <p>Description: Description of Software 1</p>
+        </div>
+
+        <div>
+            <img src="log2.png" alt="Software 2">
+            <h2>Title 2</h2>
+            <p>Type: Type of Software 2</p>
+            <p>Description: Description of Software 2</p>
+        </div>
+
+        <div>
+            <img src="log3.png" alt="Software 3">
+            <h2>Title 3</h2>
+            <p>Type: Type of Software 3</p>
+            <p>Description: Description of Software 3</p>
+        </div>
+    </section>
+
+    <div class="buttons">
+        <button onclick="See_all()">SEE ALL</button>
+        <!-- <button onclick="window.location.href='voter.html'">Voter</button> -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
