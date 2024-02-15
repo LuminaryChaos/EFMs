@@ -24,6 +24,65 @@
             <title>Chein.com</title>
             <style>
 
+
+            @media only screen and (min-width: 600px) {
+
+                    nav ul li {
+                        margin-bottom: 10px;
+                        border: 2px solid rgb(14, 185, 99);
+                    }
+                    
+                }
+
+
+
+
+                @media only screen and (max-width: 600px) {
+                    header {
+                        height: 60px;
+                        padding: 10px;
+                    }
+
+                    header h1 {
+                        font-size: 30px;
+                        line-height: 45px;
+                    }
+
+                    nav {
+                        padding: 5px;
+                    }
+
+                    nav ul {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    nav ul li {
+                        margin-bottom: 10px;
+                        border: 2px dashed rgb(40, 169, 179);
+                    }
+
+                    .titre p {
+                        font-size: 16px;
+                    }
+
+                    .pg1 p {
+                        font-size: 14px;
+                    }
+
+                    .Main3 {
+                        flex-direction: column;
+                    }
+
+                    .The-3-divs img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+
+
+
                 body {
                     font-family: Arial, Roboto, sans-serif;
                 }
@@ -59,6 +118,7 @@
                     padding: 0;
                     display: flex;
                     justify-content: space-around;
+                    flex-wrap: wrap;
                 }
 
                 nav ul li {
@@ -69,6 +129,7 @@
                     border-radius: 10px;
                     transition: all 0.5s ease;
                     text-decoration: none;
+                    padding: 10px 5px 5px 5px;
                 }
 
                 nav ul li a:hover {
@@ -96,6 +157,7 @@
                     display: flex;
                     flex-direction: row;
                     justify-content: space-around;
+                    flex-wrap: wrap;
                 }
 
                 .The-3-divs{
@@ -103,6 +165,7 @@
                     height: 90px;
                     display: flex;
                     flex-direction: row;
+                    flex-wrap: wrap;
                 }
 
 
@@ -112,6 +175,12 @@
                     border-radius: 20px;
                 }
 
+                .divfx{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                }
             </style>
         </head>
 
@@ -123,10 +192,10 @@
 
     <nav>
         <ul>
-            <li><a href="#">Femme</a></li>
-            <li><a href="#">HOT</a></li>
-            <li><a href="#">Homme</a></li>
-            <li><a href="#">PROMOS</a></li>
+            <li><a href="#">Nouveautés</a></li>
+            <li><a href="#">Quickship</a></li>
+            <li><a href="#">Promos</a></li>
+            <li><a href="#">Vetement pour les femmes</a></li>
         </ul>
     </nav>
     
@@ -146,5 +215,46 @@
     </div>
 
 
+        <br><br><br><br><br><br><br><br><br><br>
+
+       <form style="border: 2px solid black; width: 450px;height: fit-content;">
+
+          <p style="z-index: 2;margin: -20px 0px 0px 20px;font-weight: bold;font-size: 30px;background-color: white;width: 130px;">Sondage</p>
+          <div style="display: flex;flex-direction: row;font-weight: bold;font-size: 20px;justify-content: space-around;flex-wrap: wrap;"><p>Sondage sur la satisfaction du site Chein</p></div>
+          
+          <label for="nom">NOM:</label>
+          <input type="text" id="nom" name="nom" style="margin: 20px 0px 0px 40px;"><br>
+  
+          <label for="ville" style="margin-top: -20px;">Ville:</label>
+          <textarea name="" id="" cols="10" rows="3" style="margin: 20px 0px 0px 60px;"></textarea><br>
+
+
+        
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" style="margin: 20px 0px 0px 40px;"><br>
+
+          <label for="satisfaction">Comment évalueriez-vous votre satisfaction à l'égard de ce site?</label><br>
+          <div style="display: flex;justify-content: center;">0%<input type="range" id="satisfaction" name="satisfaction" min="0" max="100" >100% <br></div>
+
+          <label for="amelioration">Avez-vous des propositions d'amélioration pour notre site ??</label><br>
+
+          <div style="display: flex;justify-content: center;border-bottom: 10px solid transparent;">
+            <input type="radio" id="oui" name="amelioration" value="oui">
+            <label >Oui</label>
+            <input type="radio" id="non" name="amelioration" value="non">
+            <label >Non</label><br>
+          </div>
+
+         <div style="display: flex;">
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Annuler">
+          </div>
+
+        </form>
+
+
     </body>
 </html>
+
+
+
