@@ -1,0 +1,125 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img_title{
+    display: flex;
+}
+
+.first_nav ul{
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+}
+
+.first_nav ul, .second_nav ul{
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+.box_container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box p{
+    text-align: center;
+}
+
+.box{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 350px;
+    border: 2px solid;
+}
+.box h1{
+    text-align: center;
+
+}
+
+.fix input{
+    width: 50px;
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.fix{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fix input{
+    width: 100px;
+}
+
+.form_cont{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.submit_reset{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form_cont :first-child p{
+    text-align: center;
+}
+
+.box:hover{
+    background-color: yellow;
+}
+
+button{
+    border-radius: 20px;
+    border: 1px solid;
+
+}
+
+
+@media screen and (max-width: 880px) and (min-width: 500px){
+
+    .box_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .box p{
+        display: none;
+    }
+
+    .box {
+        width: 200px;
+    }
+
+    .first_nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+}
+
